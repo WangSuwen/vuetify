@@ -1,8 +1,8 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue from 'vue'
+import Router from 'vue-router'
 import routes from './routes.js';
 
-Vue.use(Router);
+Vue.use(Router)
 
 const router = new Router({
   mode: 'hash',
@@ -18,4 +18,5 @@ router.beforeEach((to, from, next) => {
 router.afterEach((to, from) => {
   console.log('afterEach--', to, from);
 });
+
 export default router;
