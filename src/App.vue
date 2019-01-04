@@ -1,22 +1,18 @@
 <template>
   <div id="app">
-    <div class="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <div class="nav">
-      <router-link to="/custom-theme">vuetify-自定义主题</router-link> |
-      <router-link to="/scroll">vuetify-滚动</router-link> |
-      <router-link to="/about">vuetify-</router-link> |
-      <router-link to="/about">vuetify-</router-link> |
-      <router-link to="/about">vuetify-</router-link> |
-      <router-link to="/about">vuetify-</router-link> |
-      <router-link to="/about">vuetify-</router-link> |
-      <router-link to="/about">vuetify-</router-link>
-    </div>
+    <left-nav></left-nav>
     <router-view />
   </div>
 </template>
+<script>
+  import leftNav from './components/leftNavigation'
+  export default {
+    components: {
+      leftNav
+    }
+  }
+</script>
+
 
 <style>
 #app {

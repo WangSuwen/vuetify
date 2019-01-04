@@ -2,6 +2,8 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import init from './vue-mixin/init.js';
+
 /**
  * 添加  Vuetify 依赖
  */
@@ -20,5 +22,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  mixins: [init],
   render: h => h(App)
 }).$mount('#app');

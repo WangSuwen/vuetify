@@ -6,22 +6,22 @@ const mergeMixin = (component) => {
 };
 
 const Home = (resolve) => {
-  import('./views/Home.vue').then((component) => {
+  import('./pages/Home.vue').then((component) => {
     resolve(mergeMixin(component));
   });
 }
 const About = (resolve) => {
-  import('./views/About.vue').then((component) => {
+  import('./pages/About.vue').then((component) => {
     resolve(mergeMixin(component));
   });
 }
 const CustomTheme = (resolve) => {
-  import('./views/CustomTheme.vue').then((component) => {
+  import('./pages/CustomTheme.vue').then((component) => {
     resolve(mergeMixin(component));
   });
 }
 const Scroll = (resolve) => {
-  import('./views/Scroll.vue').then((component) => {
+  import('./pages/Scroll.vue').then((component) => {
     resolve(mergeMixin(component));
   });
 }

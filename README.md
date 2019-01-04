@@ -4,7 +4,16 @@
 ```
 yarn install
 ```
+##项目启动
+```
+npm run server
+```
+## ICON 列表
+>https://jossef.github.io/material-design-icons-iconfont/
 
+
+
+--------------
 ### Compiles and hot-reloads for development
 ```
 yarn run serve
